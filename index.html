@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>habits</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="Logomarca do app Habits" />
+      <button>
+        <img src="./assets/plus.svg" alt="Icone de mais + roxo" />
+        <div>Registrar Tarefa</div>
+      </button>
+    </header>
+    <form id="form-habits">
+      <!--Todo input fica dentro de form-->
+      <div class="habits">
+        <div class="habit" data-name="correr">🏃‍♂️</div>
+        <div class="habit" data-name="beberAgua">💧</div>
+        <div class="habit" data-name="meditar">🧘‍♀️</div>
+        <div class="habit" data-name="dormir">💤</div>
+        <div class="habit" data-name="treinar">🏋️‍♀️</div>
+        <div class="habit" data-name="estudar">📘</div>
+      </div>
+
+      <div class="days"></div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

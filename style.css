@@ -1,0 +1,90 @@
+/* Efeito cascata, tudo que vem após na ordem terá prioridade, ou seja,
+se eu colocar o mesmo código em sequência, o que vem em segundo será valido*/
+* {
+  /* Seleciona todos os atributos para alteração*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: aliceblue;
+  height: 100vh;
+}
+header {
+  display: flex; /* Display é visualização e disposição dos itens*/
+  align-items: center;
+  justify-content: space-between; /* Pega toda largura do header e coloca espaço entre os elementos*/
+  padding: 48px; /*Preenchimento interno entre os itens*/
+  position: fixed;
+  width: 100%;
+}
+button {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #8b5cf8;
+  background-color: transparent;
+  color: aliceblue;
+  display: flex; /*Flexivel, tira o elemento um do lado do outro*/
+  gap: 13px; /*Quando temos o FLEX ele cria um espaço entre os elementos*/
+  align-items: center; /* Centraliza os itens, Essa opção só funciona se tiver um flex*/
+  font-family: "Inter"; /*Font que baixou do fonts.google*/
+  font-weight: 600; /*Peso da Fonte*/
+  font-size: 16px; /*Tamanho da Fonte*/
+  line-height: 125%; /*Altura da linha*/
+}
+#form-habits {
+  display: flex;
+  padding: 182px 48px 48px;
+  width: fit-content;
+}
+.habits {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.habit {
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.days {
+  display: flex;
+  margin-left: 32px;
+  gap: 48px;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.day div {
+  margin-bottom: 8px;
+  text-align: center;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+}
+input {
+  appearance: none; /*Remove aparencia*/
+  -webkit-appearance: none; /*Remove aparencia em alguns navegadores*/
+  width: 64px; /*Altura*/
+  height: 64px; /*Largura*/
+  border: 2px solid #27272a; /*Borda, tamanho, tipo, cor*/
+  border-radius: 8px; /*Arredondamento*/
+  background: rgb(65, 62, 62);
+}
+input:checked {
+  /*Peseudo-selector*/
+  background: #8b5cf6;
+  border: 2px solid #a78bfa;
+}
+@media (max-width: 570px) { /*Regra*/
+  button div {
+    display: none;
+  }
+}
